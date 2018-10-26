@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:poco-develop/output/Poco.xcodeproj">
+      location = "group:poco-develop/Poco.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Mem/Mem.xcodeproj">
