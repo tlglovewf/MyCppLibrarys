@@ -11,14 +11,15 @@
 		6A2692CF217F18ED002FA117 /* AllocatedObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A2692CD217F18ED002FA117 /* AllocatedObject.cpp */; };
 		6A2692D0217F18ED002FA117 /* NedPoolingPolicy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A2692CE217F18ED002FA117 /* NedPoolingPolicy.cpp */; };
 		6A2692D6217F28B3002FA117 /* mem.h in Sources */ = {isa = PBXBuildFile; fileRef = 6A2692D5217F28B3002FA117 /* mem.h */; };
-		6A2692D9217F297D002FA117 /* thread.h in Sources */ = {isa = PBXBuildFile; fileRef = 6A2692D8217F297D002FA117 /* thread.h */; };
+		6A2692D9217F297D002FA117 /* mythread.h in Sources */ = {isa = PBXBuildFile; fileRef = 6A2692D8217F297D002FA117 /* mythread.h */; };
+		6A9F93B42181CA4D00B58F20 /* libPocoFoundationd.80.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9F93B52181CA4D00B58F20 /* libPocoFoundationd.80.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6A2692A6217EB93E002FA117 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 			);
@@ -44,7 +45,10 @@
 		6A2692D3217F18F4002FA117 /* MemAllocConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemAllocConfig.h; sourceTree = "<group>"; };
 		6A2692D4217F18F5002FA117 /* NedPoolingPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NedPoolingPolicy.h; sourceTree = "<group>"; };
 		6A2692D5217F28B3002FA117 /* mem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mem.h; sourceTree = "<group>"; };
-		6A2692D8217F297D002FA117 /* thread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		6A2692D8217F297D002FA117 /* mythread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mythread.h; sourceTree = "<group>"; };
+		6A9F93B12181C3CD00B58F20 /* libPocoFoundationd.80.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libPocoFoundationd.80.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A9F93B32181C84600B58F20 /* libPocoFoundationd.80.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libPocoFoundationd.80.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A9F93B52181CA4D00B58F20 /* libPocoFoundationd.80.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libPocoFoundationd.80.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9F93B42181CA4D00B58F20 /* libPocoFoundationd.80.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 				6A2692D7217F2959002FA117 /* Thread */,
 				6A2692AA217EB93E002FA117 /* Mem */,
 				6A2692A9217EB93E002FA117 /* Products */,
+				6A9F93AF2181C3CD00B58F20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,9 +147,19 @@
 		6A2692D7217F2959002FA117 /* Thread */ = {
 			isa = PBXGroup;
 			children = (
-				6A2692D8217F297D002FA117 /* thread.h */,
+				6A2692D8217F297D002FA117 /* mythread.h */,
 			);
 			path = Thread;
+			sourceTree = "<group>";
+		};
+		6A9F93AF2181C3CD00B58F20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A9F93B52181CA4D00B58F20 /* libPocoFoundationd.80.dylib */,
+				6A9F93B32181C84600B58F20 /* libPocoFoundationd.80.dylib */,
+				6A9F93B12181C3CD00B58F20 /* libPocoFoundationd.80.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +223,7 @@
 				6A2692C5217F0EA5002FA117 /* main.cpp in Sources */,
 				6A2692CF217F18ED002FA117 /* AllocatedObject.cpp in Sources */,
 				6A2692D6217F28B3002FA117 /* mem.h in Sources */,
-				6A2692D9217F297D002FA117 /* thread.h in Sources */,
+				6A2692D9217F297D002FA117 /* mythread.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +337,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = nedmalloc/;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				HEADER_SEARCH_PATHS = (
+					nedmalloc/,
+					"/Users/TLG/Documents/GitHub/poco-develop/Foundation/include",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "/Users/TLG/Documents/GitHub/poco-develop/output/lib/Debug";
+				LIBRARY_SEARCH_PATHS = "/Users/TLG/Documents/GitHub/poco-develop/output/lib/Debug";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -330,7 +353,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = nedmalloc/;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				HEADER_SEARCH_PATHS = (
+					nedmalloc/,
+					"/Users/TLG/Documents/GitHub/poco-develop/Foundation/include",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "/Users/TLG/Documents/GitHub/poco-develop/output/lib/Debug";
+				LIBRARY_SEARCH_PATHS = "/Users/TLG/Documents/GitHub/poco-develop/output/lib/Debug";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

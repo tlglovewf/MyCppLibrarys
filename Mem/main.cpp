@@ -5,13 +5,13 @@
 using namespace std;
 
 #include "mem.h"
-#include "thread.h"
+#include "mythread.h"
 
 int main(void)
 {
-    mem();
+    memtest();
     
-    thread();
+    threadtest();
     
     return 0;
 }
