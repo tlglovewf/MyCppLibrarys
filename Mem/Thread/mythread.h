@@ -10,7 +10,6 @@
 #include <future>
 #include <utility>
 
-#include "poco/Thread.h"
 
 int func(int x)
 {

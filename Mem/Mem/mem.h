@@ -8,9 +8,6 @@
 #include "MemoryPool.h"
 #include "MemAllocConfig.h"
 
-#include "poco/AutoPtr.h"
-#include "poco/RefCountedObject.h"
-
 #pragma region          memory pool
 
 void MemoryPoolTest()
@@ -97,22 +94,6 @@ void NedPoolTest()
     cout << " ned    objecct cast : " << (now - cur) /(float)CLOCKS_PER_SEC << endl;
 }
 
-
-class A : public Poco::RefCountedObject
-{
-public:
-    
-};
-
-void PocoTest()
-{
-//    Poco::AutoPtr<int> pt(new int(10));
-    A *a = new A;
-    Poco::AutoPtr<A> b(a,true);
-    cout << a->referenceCount() << endl;
-    
-}
-
 #pragma unregion nedmalloc pool
 
 int memtest(void)
@@ -123,7 +104,6 @@ int memtest(void)
     cout << " ============== ned    pool ================ " << endl;
     NedPoolTest();
 
-    PocoTest();
     return 0;
 }
 

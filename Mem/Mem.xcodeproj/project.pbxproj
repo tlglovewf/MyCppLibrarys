@@ -12,7 +12,6 @@
 		6A2692D0217F18ED002FA117 /* NedPoolingPolicy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A2692CE217F18ED002FA117 /* NedPoolingPolicy.cpp */; };
 		6A2692D6217F28B3002FA117 /* mem.h in Sources */ = {isa = PBXBuildFile; fileRef = 6A2692D5217F28B3002FA117 /* mem.h */; };
 		6A2692D9217F297D002FA117 /* mythread.h in Sources */ = {isa = PBXBuildFile; fileRef = 6A2692D8217F297D002FA117 /* mythread.h */; };
-		6A9F93B42181CA4D00B58F20 /* libPocoFoundationd.80.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9F93B52181CA4D00B58F20 /* libPocoFoundationd.80.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A9F93B42181CA4D00B58F20 /* libPocoFoundationd.80.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +338,9 @@
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				HEADER_SEARCH_PATHS = (
 					nedmalloc/,
-					"/Users/TLG/Documents/GitHub/poco-develop/Foundation/include",
+					"../poco-develop/Foundation/include",
 				);
-				LD_RUNPATH_SEARCH_PATHS = "/Users/TLG/Documents/GitHub/poco-develop/output/lib/Debug";
+				LD_RUNPATH_SEARCH_PATHS = "../poco-develop/lib/Debug";
 				LIBRARY_SEARCH_PATHS = "/Users/TLG/Documents/GitHub/poco-develop/output/lib/Debug";
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,9 +354,9 @@
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				HEADER_SEARCH_PATHS = (
 					nedmalloc/,
-					"/Users/TLG/Documents/GitHub/poco-develop/Foundation/include",
+					"../poco-develop/Foundation/include",
 				);
-				LD_RUNPATH_SEARCH_PATHS = "/Users/TLG/Documents/GitHub/poco-develop/output/lib/Debug";
+				LD_RUNPATH_SEARCH_PATHS = "../poco-develop/lib/Debug";
 				LIBRARY_SEARCH_PATHS = "/Users/TLG/Documents/GitHub/poco-develop/output/lib/Debug";
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
