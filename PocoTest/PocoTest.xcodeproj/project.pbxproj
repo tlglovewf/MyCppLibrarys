@@ -7,11 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A685AEE21899B2E00061CAF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A685AED21899B2E00061CAF /* main.cpp */; };
+		6A685AF22189A33100061CAF /* libPocoFoundationd.80.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A685AF32189A33100061CAF /* libPocoFoundationd.80.dylib */; };
+		6A685AF42189B1DC00061CAF /* libPocoNetd.80.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A685AF52189B1DC00061CAF /* libPocoNetd.80.dylib */; };
+		6A87A9112186FDC80080625C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A87A9102186FDC80080625C /* main.cpp */; };
+		6A87A9152186FF9C0080625C /* libPocoNetd.80.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A87A9162186FF9C0080625C /* libPocoNetd.80.dylib */; };
+		6A87A91721870C8D0080625C /* libPocoFoundationd.80.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A87A91821870C8D0080625C /* libPocoFoundationd.80.dylib */; };
+		6A87A91921870C990080625C /* libPocoUtild.80.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A87A91A21870C990080625C /* libPocoUtild.80.dylib */; };
 		6AB704872182B4C100E19670 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AB704862182B4C100E19670 /* main.cpp */; };
 		6AB704942182BAA500E19670 /* libPocoFoundationd.80.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB704952182BAA500E19670 /* libPocoFoundationd.80.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6A685AE921899B2E00061CAF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6A87A90C2186FDC80080625C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6AB704812182B4C100E19670 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -24,12 +49,40 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6A685AEB21899B2E00061CAF /* FileTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FileTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A685AED21899B2E00061CAF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6A685AF32189A33100061CAF /* libPocoFoundationd.80.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libPocoFoundationd.80.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A685AF52189B1DC00061CAF /* libPocoNetd.80.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libPocoNetd.80.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A87A90E2186FDC80080625C /* NetTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NetTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A87A9102186FDC80080625C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6A87A9162186FF9C0080625C /* libPocoNetd.80.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libPocoNetd.80.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A87A91821870C8D0080625C /* libPocoFoundationd.80.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libPocoFoundationd.80.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A87A91A21870C990080625C /* libPocoUtild.80.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libPocoUtild.80.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB704832182B4C100E19670 /* PocoTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PocoTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB704862182B4C100E19670 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6AB704952182BAA500E19670 /* libPocoFoundationd.80.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libPocoFoundationd.80.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6A685AE821899B2E00061CAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A685AF42189B1DC00061CAF /* libPocoNetd.80.dylib in Frameworks */,
+				6A685AF22189A33100061CAF /* libPocoFoundationd.80.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A87A90B2186FDC80080625C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A87A91921870C990080625C /* libPocoUtild.80.dylib in Frameworks */,
+				6A87A91721870C8D0080625C /* libPocoFoundationd.80.dylib in Frameworks */,
+				6A87A9152186FF9C0080625C /* libPocoNetd.80.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6AB704802182B4C100E19670 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +94,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A685AEC21899B2E00061CAF /* FileTest */ = {
+			isa = PBXGroup;
+			children = (
+				6A685AED21899B2E00061CAF /* main.cpp */,
+			);
+			path = FileTest;
+			sourceTree = "<group>";
+		};
+		6A87A90F2186FDC80080625C /* NetTest */ = {
+			isa = PBXGroup;
+			children = (
+				6A87A9102186FDC80080625C /* main.cpp */,
+			);
+			path = NetTest;
+			sourceTree = "<group>";
+		};
 		6AB7047A2182B4C100E19670 = {
 			isa = PBXGroup;
 			children = (
 				6AB704852182B4C100E19670 /* PocoTest */,
+				6A87A90F2186FDC80080625C /* NetTest */,
+				6A685AEC21899B2E00061CAF /* FileTest */,
 				6AB704842182B4C100E19670 /* Products */,
 				6AB704932182BAA500E19670 /* Frameworks */,
 			);
@@ -54,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				6AB704832182B4C100E19670 /* PocoTest */,
+				6A87A90E2186FDC80080625C /* NetTest */,
+				6A685AEB21899B2E00061CAF /* FileTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +142,11 @@
 		6AB704932182BAA500E19670 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A685AF52189B1DC00061CAF /* libPocoNetd.80.dylib */,
+				6A685AF32189A33100061CAF /* libPocoFoundationd.80.dylib */,
+				6A87A91A21870C990080625C /* libPocoUtild.80.dylib */,
+				6A87A91821870C8D0080625C /* libPocoFoundationd.80.dylib */,
+				6A87A9162186FF9C0080625C /* libPocoNetd.80.dylib */,
 				6AB704952182BAA500E19670 /* libPocoFoundationd.80.dylib */,
 			);
 			name = Frameworks;
@@ -77,6 +155,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6A685AEA21899B2E00061CAF /* FileTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A685AF121899B2E00061CAF /* Build configuration list for PBXNativeTarget "FileTest" */;
+			buildPhases = (
+				6A685AE721899B2E00061CAF /* Sources */,
+				6A685AE821899B2E00061CAF /* Frameworks */,
+				6A685AE921899B2E00061CAF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileTest;
+			productName = FileTest;
+			productReference = 6A685AEB21899B2E00061CAF /* FileTest */;
+			productType = "com.apple.product-type.tool";
+		};
+		6A87A90D2186FDC80080625C /* NetTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A87A9142186FDC80080625C /* Build configuration list for PBXNativeTarget "NetTest" */;
+			buildPhases = (
+				6A87A90A2186FDC80080625C /* Sources */,
+				6A87A90B2186FDC80080625C /* Frameworks */,
+				6A87A90C2186FDC80080625C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetTest;
+			productName = NetTest;
+			productReference = 6A87A90E2186FDC80080625C /* NetTest */;
+			productType = "com.apple.product-type.tool";
+		};
 		6AB704822182B4C100E19670 /* PocoTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AB7048A2182B4C100E19670 /* Build configuration list for PBXNativeTarget "PocoTest" */;
@@ -103,6 +215,14 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = TuLigen;
 				TargetAttributes = {
+					6A685AEA21899B2E00061CAF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					6A87A90D2186FDC80080625C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					6AB704822182B4C100E19670 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -122,11 +242,29 @@
 			projectRoot = "";
 			targets = (
 				6AB704822182B4C100E19670 /* PocoTest */,
+				6A87A90D2186FDC80080625C /* NetTest */,
+				6A685AEA21899B2E00061CAF /* FileTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6A685AE721899B2E00061CAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A685AEE21899B2E00061CAF /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A87A90A2186FDC80080625C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A87A9112186FDC80080625C /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6AB7047F2182B4C100E19670 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +276,58 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		6A685AEF21899B2E00061CAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"../poco-develop/Foundation/include",
+					"../poco-develop/Net/include",
+					"../poco-develop/Util/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6A685AF021899B2E00061CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"../poco-develop/Foundation/include",
+					"../poco-develop/Net/include",
+					"../poco-develop/Util/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6A87A9122186FDC80080625C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"../poco-develop/Foundation/include",
+					"../poco-develop/Net/include",
+					"../poco-develop/Util/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6A87A9132186FDC80080625C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"../poco-develop/Foundation/include",
+					"../poco-develop/Net/include",
+					"../poco-develop/Util/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		6AB704882182B4C100E19670 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -186,6 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "../poco-develop/Foundation/include";
 				LD_RUNPATH_SEARCH_PATHS = "$(SRCROOT)/../poco-develop/lib/Debug";
 				LIBRARY_SEARCH_PATHS = "../poco-develop/lib/Debug";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
@@ -237,6 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "../poco-develop/Foundation/include";
 				LD_RUNPATH_SEARCH_PATHS = "$(SRCROOT)/../poco-develop/lib/Debug";
 				LIBRARY_SEARCH_PATHS = "../poco-develop/lib/Debug";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
@@ -266,6 +458,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6A685AF121899B2E00061CAF /* Build configuration list for PBXNativeTarget "FileTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A685AEF21899B2E00061CAF /* Debug */,
+				6A685AF021899B2E00061CAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A87A9142186FDC80080625C /* Build configuration list for PBXNativeTarget "NetTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A87A9122186FDC80080625C /* Debug */,
+				6A87A9132186FDC80080625C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6AB7047E2182B4C100E19670 /* Build configuration list for PBXProject "PocoTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

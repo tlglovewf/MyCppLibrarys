@@ -67,7 +67,6 @@ void HTTPServerConnection::run()
 			{
 				HTTPServerResponseImpl response(session);
 				HTTPServerRequestImpl request(response, session, _pParams);
-			
 				Poco::Timestamp now;
 				response.setDate(now);
 				response.setVersion(request.getVersion());
